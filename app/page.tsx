@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main>
+    <>
         <ul className="list-disc">
             <li><a href="/headlines/gb">United Kingdom</a></li>
             <li><a href="/headlines/us">United States</a></li>
@@ -8,6 +8,6 @@ export default function Home() {
             <li><a href="/headlines/au">Australia</a></li>
             <li><a href="/headlines/in">India</a></li>
         </ul>
-    </main>
+    </>
   );
 }

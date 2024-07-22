@@ -67,11 +67,11 @@ export default async function HeadlinesPage({ params }) {
   const articles: Article[] = articlesResponseJson.articles;
   
   return (
-    <main>
+    <>
         <h2 className="text-lg mb-3">{ countryCodes[countryCode] }</h2>
         <ul className="ml-5 list-decimal">
           {articles.map(article => (<li key={article.title}>{article.title}</li>))}
         </ul>
-    </main>
+    </>
   );
 }

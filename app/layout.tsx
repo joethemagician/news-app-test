@@ -17,11 +17,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="p-10 bg-sky-400">
-        <h1 className="text-lg font-mono"><a href="/">News Headlines</a></h1>
-      </div>
-      <div className="px-10 pt-5 pb-20 bg-gray-200">
-        {children}
+      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl">
+        <div className="md:flex">
+          <div className="md:shrink-0">
+            <div className="h-48 w-full object-cover md:h-full md:w-48">
+            <h1 className="text-lg font-mono text-center mt-10"><a href="/">News Headlines</a></h1>
+          </div>
+            
+          </div>
+          <div className="p-8">
+            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Available Countries</div>
+            <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">View top 5 headlines</a>
+            <div className="mt-2 text-slate-500">
+            {children}
+            </div>
+          </div>
+        </div>
       </div>
       </body>
     </html>
