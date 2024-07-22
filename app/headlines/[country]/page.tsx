@@ -68,9 +68,9 @@ export default async function HeadlinesPage({ params }) {
   
   return (
     <main>
-      <h1 className="text-lg mb-5"><a href="/">News Headlines</a></h1>
-      <h2 className="text-lg">{ countryCodes[countryCode] }</h2>
-      <ul>
+      <h1 className="font-mono text-lg mb-5"><a href="/">News Headlines</a></h1>
+      <h2 className="text-lg mb-3">{ countryCodes[countryCode] }</h2>
+      <ul className="ml-5 list-decimal">
         {articles.map(article => (<li key={article.title}>{article.title}</li>))}
       </ul>
     </main>
